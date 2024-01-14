@@ -1,0 +1,8 @@
+include customs *
+include images *
+include nltk_data *
+include presets *.npz
+include propmpts *
+include LICENCE
+include README.md
+

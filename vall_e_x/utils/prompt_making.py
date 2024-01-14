@@ -7,14 +7,14 @@ import whisper
 langid.set_languages(['en', 'zh', 'ja'])
 
 import numpy as np
-from data.tokenizer import (
+from vall_e_x.data.tokenizer import (
     AudioTokenizer,
     tokenize_audio,
 )
-from data.collation import get_text_token_collater
-from utils.g2p import PhonemeBpeTokenizer
+from vall_e_x.data.collation import get_text_token_collater
+from vall_e_x.utils.g2p import PhonemeBpeTokenizer
 
-from macros import *
+from vall_e_x.macros import *
 
 text_tokenizer = PhonemeBpeTokenizer(tokenizer_path="./utils/g2p/bpe_69.json")
 text_collater = get_text_token_collater()

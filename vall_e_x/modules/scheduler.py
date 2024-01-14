@@ -18,7 +18,7 @@
 
 import torch
 
-from modules.optim import Eden
+from vall_e_x.modules.optim import Eden
 
 
 def calc_lr(step, dim_embed, warmup_steps):
